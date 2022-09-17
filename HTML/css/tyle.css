@@ -7,6 +7,17 @@ button {
   border: none;
 }
 
+li, ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: "poppins";
 }
@@ -34,7 +45,12 @@ button {
   font-weight: bold;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
   color: #242f51;
 }
@@ -51,20 +67,19 @@ h1, h2, h3, h4, h5, h6 {
   color: #242f51;
 }
 
-ul li {
+header {
+  background: url("../img/header-bg.png") no-repeat bottom;
+}
+header ul li {
   display: inline-block;
   padding-left: 33px;
 }
-ul li a {
+header ul li a {
   color: #242f51;
 }
-ul li button {
+header ul li button {
   width: 170px;
   height: 60px;
-}
-
-header {
-  background: url("../img/header-bg.png") no-repeat bottom;
 }
 header .container {
   position: relative;
@@ -74,9 +89,9 @@ header .cont2-col-1 {
   padding-left: 100px;
 }
 header .line {
-  font-size: 15px;
+  font-size: 20px;
   position: relative;
-  height: 30px;
+  height: 40px;
   padding-left: 30px;
   background: #e2eaed;
   display: inline-block;
@@ -85,18 +100,18 @@ header .line {
 header .line span {
   position: absolute;
   background: #fcae61;
-  height: 30px;
-  width: 30px;
-  border-radius: 15px;
-  left: -15px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  left: -20px;
 }
 header .line span img {
-  width: 15px;
-  margin-top: 7.5px;
-  margin-left: 7.5px;
+  width: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 header .line div {
-  margin-top: 7.5px;
+  margin-top: 10px;
   margin-right: 20px;
 }
 header .cont2-col-1 {
@@ -154,7 +169,8 @@ header .smart-objects ._6 {
   margin-left: 100px;
 }
 .block2 .logos li {
-  margin-left: 10px;
+  display: inline-block;
+  margin-left: 50px;
 }
 .block2 .content {
   margin-top: 100px;
@@ -236,6 +252,9 @@ header .smart-objects ._6 {
   height: 60px;
 }
 
+.block-5 {
+  height: 1000px;
+}
 .block-5 .content {
   margin-top: 200px;
 }
@@ -269,6 +288,47 @@ header .smart-objects ._6 {
 }
 .block-5 .content-2 .cheker .dsa {
   color: gray;
+}
+.block-5 .content-3 {
+  margin-top: 100px;
+}
+.block-5 .content-3 .price {
+  padding: 0;
+  box-shadow: 0 0 50px #f6f0f0;
+  padding-bottom: 40px;
+}
+.block-5 .content-3 .price .title {
+  padding-top: 30px;
+  text-align: center;
+  height: 200px;
+  background: linear-gradient(0deg, #f6f0f0 0%, rgb(255, 255, 255) 100%);
+  width: 100%;
+}
+.block-5 .content-3 .price .title h2,
+.block-5 .content-3 .price .title .per {
+  display: inline-block;
+}
+.block-5 .content-3 .price .title h2 {
+  font-family: "poppins";
+  font-size: 60px;
+}
+.block-5 .content-3 .price .detail {
+  text-align: center;
+  padding-top: 50px;
+}
+.block-5 .content-3 .price .detail button {
+  width: 200px;
+  height: 60px;
+}
+.block-5 .content-3 .pr2 {
+  border: solid #f6f0f0 5px;
+}
+.block-5 .content-3 .pr2 .last {
+  margin-top: 20px;
+}
+.block-5 .content-3 .pr2 span {
+  color: #2500f9;
+  padding-top: 20px;
 }
 
 /*# sourceMappingURL=tyle.css.map */
