@@ -1,1 +1,1 @@
-sass --watch style.scss:tyle.css
+sass --watch style.scss:style.css

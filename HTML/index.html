@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Freebie</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,77 +12,34 @@
   </head>
   <body>
     <header>
-      <div class="smart-objects">
-        <span class="_1">
-          <img src="img/details-1.png" alt="">
-        </span>
-        <span class="_2">
-          <img src="img/details-2.png" alt="">
-        </span>
-        <span class="_3">
-          <img src="img/details-3.png" alt="">
-        </span>
-        <span class="_4">
-          <img src="img/details-3.png" alt="">
-        </span>
-        <span class="_5">
-          <img src="img/details-3.png" alt="">
-        </span>
-        <span class="_6">
-          <img src="img/deteils-4.png" alt="">
-        </span>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2">
-            <a href="#" class="logo">
-              <span>App</span>Lab </a>
-          </div>
-          <div class="col-lg-2"></div>
-          <div class="col-lg-7">
-            <ul>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Key Features</a>
-              </li>
-              <li>
-                <a href="#">Pricing</a>
-              </li>
-              <li>
-                <a href="#">Testiminial</a>
-              </li>
-              <li>
-                <a href="#">FAQ</a>
-              </li>
-              <li>
-                <button class="">Try for free</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 cont2-col-1">
-            <div class="line">
-              <span>
-                <img src="img/check-icon.png" alt="">
-                </n>
-              </span>
-              <div>#1 Editiors Choice App of 2020</div>
-            </div>
-            <h1> Best app for your modern lifestyle </h1>
-            <p> Increase productivity with a simple to-do app. app for managing your personal budgets. </p>
-            <button>Try for free</button>
-            <a href="#">Watch demo video</a>
-          </div>
-          <div class="col-lg-6">
-            <img src="img/header-phone.png" alt="">
-          </div>
-        </div>
-      </div>
+    	<div class="container">
+    		<div class="row">
+    			<nav>
+    				<ul>
+    					<li class="main">
+    						<div class="logo">
+    							<span>App</span>Lab
+    						</div>
+    						<div class="but-nav">
+    							<button onclick="openList()">
+    								&#9776;
+    							</button>
+    						</div>
+    					</li>
+    					<li class="items">
+    						<ul>
+    							<li>Home</li>
+    							<li>Key Features</li>
+    							<li>Pricing</li>
+    							<li>Testiminal</li>
+    							<li>FAQ</li>
+    							<li><div class="asdd"><button>Try for free</button></div></li>
+    						</ul>
+    					</li>
+    				</ul>
+    			</nav>
+    		</div>
+    	</div>
     </header>
     <div class="block2">
       <div class="container">
@@ -457,14 +414,28 @@
     		</div>
     	</div>
     </div>
-    <script src="https://kit.fontawesome.com/05237a4639.js" crossorigin="anonymous"></script>
+   <!--  <script src="https://kit.fontawesome.com/05237a4639.js" crossorigin="anonymous"></script> -->
     <script>
+
+    	function sleep(millis){
+		    var date = new Date();
+		    var curDate = null;
+		    do { curDate = new Date(); }
+		    while(curDate-date < millis);
+		}
     	var numb = 0;
     	var list = document.getElementById('list')
     	var anim =(elem)=>{
     		list.getElementsByClassName('text')[numb].style.height= 0;
     		numb = elem;
     		list.getElementsByClassName('text')[elem].style.height= 106 + "px";
+    	}
+
+    	var navList = document.getElementsByClassName("items")[0];
+    	var height = 0;
+    	var openList = ()=>{
+    		height = Math.abs(height-250)
+    		navList.style.height = height+ "px";
     	}
     </script>
   </body>
